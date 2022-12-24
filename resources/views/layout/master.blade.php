@@ -5,25 +5,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description"
-        content="Experienced Software Engineer with a demonstrated history of working in the tech industry. Skilled in fixing bugs and creating new features with my imagination.">
     <meta name="keywords" content="news, articles, blog">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="<?php echo url("");?>">
 
-    <meta property="og:title" content="Hafizh Pratama | Software Engineer">
-    <meta name="twitter:title" content="Hafizh Pratama | Software Engineer">
-
-    <meta name="twitter:description"
-        content="Experienced Software Engineer with a demonstrated history of working in the tech industry. Skilled in fixing bugs and creating new features with my imagination.">
-    <meta name="og:description"
-        content="Experienced Software Engineer with a demonstrated history of working in the tech industry. Skilled in fixing bugs and creating new features with my imagination.">
-
-    <meta name="twitter:image"
-        content="https://copyfol.io/_next/image?url=https%3A%2F%2Fcopyfolio.s3.us-east-1.amazonaws.com%2Fclay2h9b1218308mpkeifvaht%2Fcropped_clayshmf1000o08mj50erewiv.jpeg&w=256&q=75">
-    <meta property="og:image"
-        content="https://copyfol.io/_next/image?url=https%3A%2F%2Fcopyfolio.s3.us-east-1.amazonaws.com%2Fclay2h9b1218308mpkeifvaht%2Fcropped_clayshmf1000o08mj50erewiv.jpeg&w=256&q=75">
-
+    @if (isset($url))
+        @if ($url == "blog-show")
+            <meta property="og:title" content="{{ $post->title }} | Hafizh Pratama">
+            <meta name="twitter:title" content="{{ $post->title }} | Hafizh Pratama">
+            <meta name="twitter:description" content="{{ $post->excerpt }}">
+            <meta name="og:description" content="{{ $post->excerpt }}">
+            <meta name="twitter:image" content="<?php echo url("$post->featured_image")?>">
+            <meta property="og:image" content="<?php echo url("$post->featured_image")?>">
+            <meta name="description" content="{{ $post->excerpt }}">
+            <link rel="canonical" href="<?php echo url("blog/$post->slug");?>">
+        @elseif($url == "blog")
+            <meta property="og:title" content="Hafizh Pratama | Software Engineer">
+            <meta name="twitter:title" content="Hafizh Pratama | Software Engineer">
+            <meta name="twitter:description" content="Blog's Hafizh Pratama">
+            <meta name="og:description" content="Blog's Hafizh Pratama">
+            <meta name="twitter:image" content="<?php echo url("/images/foto_cv.jpeg")?>">
+            <meta property="og:image" content="<?php echo url("/images/foto_cv.jpeg")?>">
+            <meta name="description" content="Blog's Hafizh Pratama">
+            <link rel="canonical" href="<?php echo url("/blog");?>">
+        @elseif($url == "certificates")
+            <meta property="og:title" content="Hafizh Pratama | Software Engineer">
+            <meta name="twitter:title" content="Hafizh Pratama | Software Engineer">
+            <meta name="twitter:description" content="Certificates's Hafizh Pratama">
+            <meta name="og:description" content="Certificates's Hafizh Pratama">
+            <meta name="twitter:image" content="<?php echo url("/images/foto_cv.jpeg")?>">
+            <meta property="og:image" content="<?php echo url("/images/foto_cv.jpeg")?>">
+            <meta name="description" content="Certificates's Hafizh Pratama">
+            <link rel="canonical" href="<?php echo url("/certificates");?>">
+        @endif
+    @else
+        <meta property="og:title" content="Hafizh Pratama | Software Engineer">
+        <meta name="twitter:title" content="Hafizh Pratama | Software Engineer">
+        <meta name="twitter:description" content="Experienced Software Engineer with a demonstrated history of working in the tech industry. Skilled in fixing bugs and creating new features with my imagination.">
+        <meta name="og:description" content="Experienced Software Engineer with a demonstrated history of working in the tech industry. Skilled in fixing bugs and creating new features with my imagination.">
+        <meta name="twitter:image" content="<?php echo url("/images/foto_cv.jpeg")?>">
+        <meta property="og:image" content="<?php echo url("/images/foto_cv.jpeg")?>">
+        <meta name="description" content="Experienced Software Engineer with a demonstrated history of working in the tech industry. Skilled in fixing bugs and creating new features with my imagination.">
+        <link rel="canonical" href="<?php echo url("");?>">
+    @endif
 
     <meta name="template_type" content="article_blog" />
     <meta property='og:type' content="article" />
@@ -32,7 +55,6 @@
     <meta name="meta-branding" content="">
     <meta name='theme' content="blog">
     <meta name="twitter:card" content="summary_large_image">
-
 
     @include('layout.styles')
 </head>

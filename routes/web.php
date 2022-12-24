@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\OpenAiController;
+use App\Http\Controllers\SitemapXmlController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,12 +21,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/projects', function () {
-    return view('projects');
-});
-
 Route::get('/projects/openai', [OpenAiController::class, 'index']);
 Route::post('/projects/openai', [OpenAiController::class, 'result'])->name('result');
 
-Route::get('/projects/blog', [BlogController::class, 'index']);
-Route::get('/projects/blog/{slug}', [BlogController::class, 'show']);
+Route::get('/blog', [BlogController::class, 'index']);
+Route::get('/blog/{slug}', [BlogController::class, 'show']);
+Route::get('/blog/author/{slug}', [BlogController::class, 'author']);
+Route::get('/blog/tag/{slug}', [BlogController::class, 'tag']);
+
+Route::get('/sitemap.xml', [SitemapXmlController::class, 'index']);
+Route::get('/certificates', [SitemapXmlController::class, 'displayCertificates']);
+Route::get('/storage/wink/images/{filename}', [SitemapXmlController::class, 'displayImage']);
+
+Route::get('/search',[BlogController::class, 'search']);
