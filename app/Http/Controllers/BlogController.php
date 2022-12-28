@@ -24,9 +24,12 @@ class BlogController extends Controller
             ->orderBy('publish_date', 'DESC')
             ->simplePaginate(10);
 
+        $tags = DB::table('wink_tags')->get();
+
         return view('projects.blog', [
             'posts' => $posts,
-            'url' => "blog"
+            'url' => "blog",
+            'tags' => $tags
         ]);
     }
 
@@ -125,6 +128,8 @@ class BlogController extends Controller
     {
         $search = $request->input('search');
 
+        $tags = DB::table('wink_tags')->get();
+
         $posts = WinkPost::with('tags')
             ->live()
             ->where('title', 'like', "%{$search}%")
@@ -134,7 +139,8 @@ class BlogController extends Controller
         return view('projects.blog', [
             'posts' => $posts,
             'url' => "blog",
-            'search' => $search
+            'search' => $search,
+            'tags' => $tags
         ]);
     }
 

@@ -11,13 +11,13 @@
             <div style="flex-grow: unset;" class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/">Home</a>
+                        <a class="nav-link color-black" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/blog">Blog</a>
+                        <a class="nav-link color-black" href="/blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/certificates">Certificates</a>
+                        <a class="nav-link color-black" href="/certificates">Certificates</a>
                     </li>
                 </ul>
             </div>

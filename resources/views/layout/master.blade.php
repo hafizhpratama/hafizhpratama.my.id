@@ -40,11 +40,11 @@
     @else
         <meta property="og:title" content="Hafizh Pratama | Software Engineer">
         <meta name="twitter:title" content="Hafizh Pratama | Software Engineer">
-        <meta name="twitter:description" content="Experienced Software Engineer with a demonstrated history of working in the tech industry. Skilled in fixing bugs and creating new features with my imagination.">
-        <meta name="og:description" content="Experienced Software Engineer with a demonstrated history of working in the tech industry. Skilled in fixing bugs and creating new features with my imagination.">
+        <meta name="twitter:description" content="Experienced Software Engineer with a demonstrated history in the tech industry. Skilled in bug fixing and feature development with a strong emphasis on creativity and efficiency.">
+        <meta name="og:description" content="Experienced Software Engineer with a demonstrated history in the tech industry. Skilled in bug fixing and feature development with a strong emphasis on creativity and efficiency.">
         <meta name="twitter:image" content="<?php echo url("/images/foto_cv.jpeg")?>">
         <meta property="og:image" content="<?php echo url("/images/foto_cv.jpeg")?>">
-        <meta name="description" content="Experienced Software Engineer with a demonstrated history of working in the tech industry. Skilled in fixing bugs and creating new features with my imagination.">
+        <meta name="description" content="Experienced Software Engineer with a demonstrated history in the tech industry. Skilled in bug fixing and feature development with a strong emphasis on creativity and efficiency.">
         <link rel="canonical" href="<?php echo url("");?>">
     @endif
 
