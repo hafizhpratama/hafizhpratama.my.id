@@ -1,7 +1,10 @@
 @extends('layout.master')
 @section('content')
+<div class="overlay">
+    <div class="spinner-border" role="status">
+    </div>
+</div>
 <h2 class="fw-bold mb-5 color-black" style="font-size: 20px;"><u>Blog</u></h2>
-
 <form action="/search" method="GET" class="form-inline">
     <div class="input-group">
         <input style="border-radius: 14px 0 0 14px;" type="text" name="search" @if (isset($search)) value="{{$search}}"
@@ -11,7 +14,6 @@
         </div>
     </div>
 </form>
-
 <div class="mb-5">
     <div class="mt-4">
         <span class="color-black">Recommended topics,</span><br>
@@ -23,16 +25,14 @@
             href="/blog/tag/{{$tag->slug}}">#{{$tag->name}}</a></span>
     @endforeach
 </div>
-
 @if (isset($search))
 <div class="mb-3">
     <span>Search Results for <b>{{$search}}</b> </span>
 </div>
 @endif
-
 @foreach($posts as $post)
 <a href="/blog/{{ $post->slug }}" style="text-decoration: none; color: inherit;">
-    <div class="card mb-4" style="border-radius: 14px; border:none;">
+    <div class="card mb-4 hover-white" style="border-radius: 14px; border:none;">
         <div style="
         border-radius: 14px 14px 0 0;
         min-height: 300px;

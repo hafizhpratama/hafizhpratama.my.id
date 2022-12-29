@@ -11,3 +11,11 @@
   });
 </script>
 @endif
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+  $(window).on('load', function(){
+   $('.overlay').fadeOut();
+   $('.overlay').remove();
+});
+</script>

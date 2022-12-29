@@ -1,13 +1,20 @@
 @extends('layout.master')
 @section('content')
+<div class="overlay">
+    <div class="spinner-border" role="status">
+    </div>
+</div>
 <div class="container">
     <div class="mt-5 pt-4">
         <img width="100%" height="100%" style="border-radius: 50%; width: 96px;" src="/images/foto_cv.jpeg"
             alt="image-profile">
     </div>
     <div class="mt-4 mb-5">
-        <h1 class="fw-bold color-black" style="font-size: 32px;">Hi, I'm Hafizh Pratama!</h1>
-        <p class="color-black" style="font-weight: 400; font-size: 16px;">Experienced Software Engineer with a demonstrated history in the
+        <h1 class="fw-bold color-black"
+            style="background: linear-gradient(130deg, rgba(30,135,198,1) 0%, rgba(111,209,241,1) 50%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 32px;">
+            Hi, I'm Hafizh!</h1>
+        <p class="color-black" style="font-weight: 400; font-size: 16px;">Experienced Software Engineer with a
+            demonstrated history in the
             tech industry. Skilled in bug fixing and feature development with a strong emphasis on creativity and
             efficiency. Known for attention to detail and love of learning. A calm and enthusiastic team player with a
             passion for writing, reading, and cats.</p>
@@ -138,7 +145,8 @@
                 </div>
             </div>
         </a>
-        <a href="/projects/openai" target="_blank" class="list-group-item list-group-item-action d-flex gap-3 p-5 mb-3 hover-white"
+        <a href="/projects/openai" target="_blank"
+            class="list-group-item list-group-item-action d-flex gap-3 p-5 mb-3 hover-white"
             style="border: none; border-radius: 14px;" aria-current="true">
             <div class="row align-items-center">
                 <div class="col-sm-2 py-2">
@@ -148,7 +156,8 @@
                 <div class="col-sm-10 py-2">
                     <div>
                         <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">OpenAI Ask Me Anything</h3>
-                        <p class="mb-0 color-black">"OpenAI Ask Me Anything" is a project to build a Q&A system using NLP
+                        <p class="mb-0 color-black">"OpenAI Ask Me Anything" is a project to build a Q&A system using
+                            NLP
                             and large language models. It aims to answer any question accurately and meaningfully.</p>
                     </div>
                 </div>
@@ -164,7 +173,8 @@
                 </div>
                 <div class="col-sm-10 py-2">
                     <div>
-                        <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">Hukumonline Pendidikan Khusus Profesi Advokat
+                        <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">Hukumonline Pendidikan Khusus
+                            Profesi Advokat
                         </h3>
                         <p class="mb-0 color-black">In collaboration with the Indonesian Advocates Association (Peradi)
                             and the Yarsi University Faculty of Law, Hukumonline organizes PKPA both face-to-face and
@@ -184,8 +194,10 @@
                 </div>
                 <div class="col-sm-10 py-2">
                     <div>
-                        <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">Hukumonline Excellent Document Management</h3>
-                        <p class="mb-0 color-black">A Comprehensive Platform to Enhance Your Workflow. With many years of
+                        <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">Hukumonline Excellent Document
+                            Management</h3>
+                        <p class="mb-0 color-black">A Comprehensive Platform to Enhance Your Workflow. With many years
+                            of
                             experience as the most trusted source for Indonesian legal documents, we thrive on helping
                             you to simplify and manage your documents.</p>
                     </div>
@@ -202,7 +214,8 @@
                 </div>
                 <div class="col-sm-10 py-2">
                     <div>
-                        <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">Hukumonline Regulatory Compliance System</h3>
+                        <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">Hukumonline Regulatory Compliance
+                            System</h3>
                         <p class="mb-0 color-black">The Regulatory Compliance System is present as a pioneer for legal
                             compliance monitoring solutions in Indonesia that provide convenience for companies in
                             various industries.</p>
@@ -280,7 +293,8 @@
                 </div>
                 <div class="col-sm-10 py-2">
                     <div>
-                        <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">LPKA (Lembaga Pengembangan Kemahasiswaan dan
+                        <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">LPKA (Lembaga Pengembangan
+                            Kemahasiswaan dan
                             Alumni) UMY</h3>
                         <p class="mb-0 color-black">LPKA (Institute for Student and Alumni Development) UMY is a
                             supporting unit formed to develop student activities that are capable of supporting the
@@ -300,8 +314,10 @@
                 </div>
                 <div class="col-sm-10 py-2">
                     <div>
-                        <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">Laboratorium Ilmu Pemerintahan UMY</h3>
-                        <p class="mb-0 color-black">The UMY Government Science Lab is part of the Yogyakarta Muhammadiyah
+                        <h3 style="font-size:16px;" class="mb-0 fw-bold color-black">Laboratorium Ilmu Pemerintahan UMY
+                        </h3>
+                        <p class="mb-0 color-black">The UMY Government Science Lab is part of the Yogyakarta
+                            Muhammadiyah
                             University Government Science Study Program. The UMY Government Science Lab has the main
                             function as a facilitator and organizer of practicum activities for Government Science study
                             program courses.</p>

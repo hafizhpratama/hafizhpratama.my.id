@@ -1,5 +1,9 @@
 @extends('layout.master')
 @section('content')
+<div class="overlay">
+    <div class="spinner-border" role="status">
+    </div>
+</div>
 <main class="form-signin w-100 m-auto pt-5 mt-5">
     <form method="POST" action="{{route('result')}}">
         @csrf

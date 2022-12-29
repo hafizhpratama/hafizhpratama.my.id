@@ -1,5 +1,9 @@
 @extends('layout.master')
 @section('content')
+<div class="overlay">
+    <div class="spinner-border" role="status">
+    </div>
+</div>
 <h1 class="fw-bold color-black">{{ $post->title }}</h1>
 <div class="row">
     <div class="col">

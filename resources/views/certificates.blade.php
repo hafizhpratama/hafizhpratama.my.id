@@ -1,5 +1,9 @@
 @extends('layout.master')
 @section('content')
+<div class="overlay">
+  <div class="spinner-border" role="status">
+  </div>
+</div>
 <h2 class="fw-bold mb-5 color-black" style="font-size: 20px;"><u>Certificates</u></h2>
 <img class="mb-2" style="width: 100px;"
   src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/HackerRank_Icon-1000px.png/800px-HackerRank_Icon-1000px.png"

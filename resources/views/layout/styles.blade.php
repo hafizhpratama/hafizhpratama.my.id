@@ -37,10 +37,26 @@
     .hover-white:hover {
         background-color: white !important;
         color: #34364a !important;
+        box-shadow: 0px 0px 56px 0px rgba(0, 0, 0, 0.1);
     }
 
     .color-black {
         color: #34364a !important;
+    }
+
+    .overlay {
+        align-items: center;
+        background: #FFF;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        left: 0;
+        position: fixed;
+        top: 0;
+        transition: opacity 0.2s linear;
+        width: 100%;
+        z-index: 9999;
+        opacity: 1;
     }
 
     /* phone */

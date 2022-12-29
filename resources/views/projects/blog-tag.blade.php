@@ -1,13 +1,17 @@
 @extends('layout.master')
 @section('content')
+<div class="overlay">
+  <div class="spinner-border" role="status">
+  </div>
+</div>
 <h2 class="fw-bold mb-3 color-black" style="font-size: 20px;"><u>Tag</u></h2>
-<h1 style="font-size: 32px;"
+<h1 style="font-size: 20px;"
   class="fw-bold mb-5 d-inline-flex mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-2">
   #{{ $tag_name }}</h1>
 <h2 class="fw-bold mb-4 color-black" style="font-size: 20px;">All the Latest</h2>
 @foreach($posts as $post)
 <a href="/blog/{{ $post->slug }}" style="text-decoration: none; color: inherit;">
-  <div class="card mb-4" style="border-radius: 14px; border:none;">
+  <div class="card mb-4 hover-white" style="border-radius: 14px; border:none;">
     <div class="row g-0">
       <div class="col-md-4">
         <div
